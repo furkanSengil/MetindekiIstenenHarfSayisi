@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,65 +13,71 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="yazidakiIstenenKarakterSayisi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="metni girin:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS3-jN-GeV">
-                                <rect key="frame" x="70" y="171" width="111" height="24"/>
-                                <color key="backgroundColor" red="0.71687632215606578" green="0.88640537253626572" blue="0.67799997329711914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="metni girin:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS3-jN-GeV">
+                                <rect key="frame" x="111" y="147.5" width="98" height="20.5"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bUF-Ax-HkY">
-                                <rect key="frame" x="70" y="210" width="85" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bUF-Ax-HkY">
+                                <rect key="frame" x="144" y="180" width="32" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="aranmak istenen karkteri:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fU-Fv-cc1">
-                                <rect key="frame" x="70" y="260" width="240" height="30"/>
-                                <color key="backgroundColor" red="0.71687632219999997" green="0.88640537249999996" blue="0.67799997329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="metin ve 1 adet karakter giriniz" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dc-5C-idQ">
-                                <rect key="frame" x="64" y="428" width="303" height="30"/>
-                                <color key="backgroundColor" red="0.71687632219999997" green="0.88640537249999996" blue="0.67799997329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="metin ve 1 adet karakter giriniz" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dc-5C-idQ">
+                                <rect key="frame" x="43" y="351" width="234" height="18"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5S7-EL-kMc">
-                                <rect key="frame" x="185" y="519" width="74" height="52"/>
-                                <color key="backgroundColor" name="button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5S7-EL-kMc">
+                                <rect key="frame" x="138" y="389" width="44.5" height="31"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Bul"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Bul" titleAlignment="automatic"/>
                                 <connections>
                                     <action selector="islemButonu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AeJ-Q5-p4W"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="egG-2m-Obf">
-                                <rect key="frame" x="70" y="305" width="94" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="egG-2m-Obf">
+                                <rect key="frame" x="144" y="267" width="32" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aranmak istenen karkteri:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fU-Fv-cc1">
+                                <rect key="frame" x="51" y="234" width="218.5" height="20.5"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="arkaplan"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5Dc-5C-idQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3xa-zn-VQo"/>
-                            <constraint firstItem="5S7-EL-kMc" firstAttribute="top" secondItem="5Dc-5C-idQ" secondAttribute="bottom" constant="60" id="5Ft-Vz-llj"/>
-                            <constraint firstItem="egG-2m-Obf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="6wu-4B-Kt0"/>
-                            <constraint firstItem="5Dc-5C-idQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Re-ZF-t4V"/>
-                            <constraint firstItem="egG-2m-Obf" firstAttribute="top" secondItem="3fU-Fv-cc1" secondAttribute="bottom" constant="15" id="Ecr-b5-unx"/>
-                            <constraint firstItem="RS3-jN-GeV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="Es7-PZ-LTd"/>
-                            <constraint firstItem="bUF-Ax-HkY" firstAttribute="top" secondItem="RS3-jN-GeV" secondAttribute="bottom" constant="15" id="Sxq-uQ-f6I"/>
-                            <constraint firstItem="3fU-Fv-cc1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="dGf-sl-MWj"/>
-                            <constraint firstItem="3fU-Fv-cc1" firstAttribute="top" secondItem="bUF-Ax-HkY" secondAttribute="bottom" constant="25" id="qBM-DA-t8d"/>
-                            <constraint firstItem="bUF-Ax-HkY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="vRD-pg-xAO"/>
-                            <constraint firstItem="5S7-EL-kMc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wch-on-Okc"/>
-                            <constraint firstItem="RS3-jN-GeV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="y8P-mw-C3c"/>
+                            <constraint firstItem="egG-2m-Obf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B8p-UD-xfh"/>
+                            <constraint firstItem="bUF-Ax-HkY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H6P-41-lgt"/>
+                            <constraint firstItem="5Dc-5C-idQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IE6-ez-qEt"/>
+                            <constraint firstItem="egG-2m-Obf" firstAttribute="top" secondItem="3fU-Fv-cc1" secondAttribute="bottom" constant="12.5" id="QTo-DT-4hp"/>
+                            <constraint firstItem="egG-2m-Obf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QxA-WP-QgW"/>
+                            <constraint firstItem="5S7-EL-kMc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vzk-XA-2lT"/>
+                            <constraint firstItem="bUF-Ax-HkY" firstAttribute="top" secondItem="RS3-jN-GeV" secondAttribute="bottom" constant="12" id="W1g-cM-LyW"/>
+                            <constraint firstItem="3fU-Fv-cc1" firstAttribute="top" secondItem="bUF-Ax-HkY" secondAttribute="bottom" constant="20" id="XGN-TD-fNX"/>
+                            <constraint firstItem="RS3-jN-GeV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cv8-Dy-naU"/>
+                            <constraint firstItem="3fU-Fv-cc1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mck-Xo-ha8"/>
+                            <constraint firstItem="5S7-EL-kMc" firstAttribute="top" secondItem="5Dc-5C-idQ" secondAttribute="bottom" constant="20" id="uAb-bE-Bhc"/>
+                            <constraint firstItem="5Dc-5C-idQ" firstAttribute="top" secondItem="egG-2m-Obf" secondAttribute="bottom" constant="50" id="ynm-r3-HL5"/>
                         </constraints>
                     </view>
                     <connections>
@@ -86,11 +92,8 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="arkaplan">
-            <color red="0.65100002288818359" green="0.49799999594688416" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="button">
-            <color red="0.45100000500679016" green="0.32899999618530273" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

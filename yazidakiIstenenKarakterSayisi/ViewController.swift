@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var girilenMetin: UITextField!
     @IBOutlet weak var girilenKarakter: UITextField!
     @IBOutlet weak var sonucMetni: UILabel!
@@ -32,7 +32,13 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.girilenMetin.delegate = self
+        self.girilenKarakter.delegate = self
         // Do any additional setup after loading the view.
     }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            self.view.endEditing(true)
+            return false
+        }
 }
 
